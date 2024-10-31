@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>太陽代表我的魚乾</title>
+  <!-- 引入 Video.js 的 CSS 文件 -->
+  <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
+  <style>
+    /* 让播放器容器全屏显示 */
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+    #video-container {
+      width: 100vw;
+      height: 100vh;
+    }
+    /* 居中播放按钮 */
+    .vjs-big-play-centered .vjs-big-play-button {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 全屏 Video.js 播放器容器 -->
+  <div id="video-container">
+    <video
+      id="my-video"
+      class="video-js vjs-fill vjs-big-play-centered"
+      controls
+      preload="auto"
+      poster="https://media.istockphoto.com/id/1189124876/video/black-and-white-sound-icon-audio-music-speaker-animation.jpg?s=640x640&k=20&c=-MH5kixm4YfRIersYM8rKij1RVgAH8ixtTw0xJ17tj4="
+      data-setup="{}"
+    >
+      <source src="https://www.dropbox.com/scl/fi/fl75lckrquuw4j2edkce3/1.mp3?rlkey=rlizswifgruouxnbzt39jqsh6&st=8bx5h5so&dl=1" type="video/mp4" />
+      <p class="vjs-no-js">
+        要观看此视频，请启用 JavaScript，并考虑升级到支持 HTML5 视频的浏览器。
+      </p>
+    </video>
+  </div>
+
+  <!-- 引入 Video.js 的 JavaScript 文件 -->
+  <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
+
+</body>
+</html>
